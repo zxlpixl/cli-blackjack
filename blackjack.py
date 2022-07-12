@@ -38,7 +38,7 @@ def player_count():
 
 def distribute(players):
     global cards_temp
-    print('Shuffeling...')
+    print('Shuffling...')
     #round1
     for player in range(players):
         shape=rd.choice(deck)
@@ -53,7 +53,15 @@ def distribute(players):
         shape=rd.choice(deck)
         card=rd.choice(shape)
         if card in not_in_deck:
-            continue
+            x=True
+            while x == True:
+                shape=rd.choice(deck)
+                card=rd.choice(shape)
+                if card in not_in_deck:
+                    continue
+                else:
+                    cards_temp.append(card)
+                    break
         else:
             cards_temp.append(card)
     round2=cards_temp

@@ -1,5 +1,0 @@
-1_spades/5_clubs
-9_clubs/6_hearts
-3_hearts/k_clubs
-3_hearts/j_clubs
-6_spades/3_spades
